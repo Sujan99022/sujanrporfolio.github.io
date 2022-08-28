@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/726b0b9ea4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+  <body onload="MyFunction()">
+    <div class="sec" id="load">
+      <i style="color: rgb(0, 0, 0); text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.607);" class="fa-solid fa-cog fa-spin fa-9x"></i>
+    </div>
+    <div class="wrapper">
+        <div class="background"></div>
+      </div>
+      <nav  class="navbar navbar-expand-lg navbar-dark" style="background-color: transparent; font-size: 20px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span style="color: orange;" class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a id="active" class="nav-link mx-5 home" href="index.html"><i class="fa-solid fa-house-chimney-window fa-bounce mr-1"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a  class="nav-link text-light mx-5 about" href="about.html"><i class="fa-solid fa-circle-info fa-shake mr-1"></i>About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light mx-5 work" href="work.html"><i class="fa-solid fa-file-word fa-shake mr-1"></i>Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mx-5 contact" data-toggle="modal" href="#exampleModalLong"><i class="fa-solid fa-address-book fa-shake mr-1"></i>Contact</a>            
+              <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div id="modal-shadow" class="modal-content" style="background-color: black;">
+                    <div style="background: linear-gradient(to right,black,rgba(142, 5, 142, 0.741));" class="modal-header">
+                      <h5 class="modal-title text-white" id="exampleModalLongTitle"><span style="color: rgb(255, 128, 0);">C</span>ontact</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span style="color: purple;" aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body" style="background: linear-gradient(to right,black,rgba(142, 5, 142, 0.741));">
+                      <table class="text-white">
+                        <tr>
+                          <td>Name</td>
+                          <td><i style="color: rgb(255, 0, 255);" class="fa-regular fa-face-grin fa-bounce"></i></td>
+                          <td>SUJAN R</td>
+                        </tr>
+                        <tr>
+                          <td>USN</td>
+                          <td style="color: rgb(255, 0, 255);"><b>&nbsp;:</b></td>
+                          <td>4BB19CS025</td>
+                        </tr>
+                        <tr>
+                          <td>E-Mail</td>
+                          <td><i style="color: rgb(255, 0, 255);" class="fa-solid fa-envelope"></i></td>
+                          <td>sujanrumakantha@gmail.com</td>
+                        </tr>
+                        <tr>
+                          <td>Ph.No</td>
+                          <td><i style="color:rgb(255, 0, 255);" class="fa-solid fa-phone fa-shake"></i></td>
+                          <td>00919902262397</td>
+                        </tr>
+                        <tr>
+                          <td>LinkedIn</td>
+                          <td><i style="color: rgb(255, 0, 255);" class="fa-brands fa-linkedin"></i></td>
+                          <td><a id="link1" style="text-decoration: none;" href="https://www.linkedin.com/in/sujan-r-7312ab21b">Visit Profile</a></td>
+                        </tr>
+                        <tr>
+                          <td>GitHub</td>
+                          <td><i style="color: rgb(255, 0, 255);" class="fa-brands fa-github"></i></td>
+                          <td><a id="link2" style="text-decoration: none;" href="https://github.com/Sujan99022">Click Here</a></td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="modal-footer" style="background: linear-gradient(to right,black,rgba(142, 5, 142, 0.741));">
+                      <button id="close" type="button" class="btn btn-secondary" data-dismiss="modal"><span style="color: rgb(255, 128, 0);">C</span>lose</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container mx-md-5 mx-0" style="display: flex; justify-content:left;align-items:center; height:90vh;">
+      <div class="jumbotron" id="jumbo" style="max-width: 700px;">
+        <p class="h2 text-white"><span style="color: rgb(255, 128, 0); z-index: 9999;">H</span>i, I'm Sujan R</p>
+        <p class="h1 text-white">Web Developer, UI/UX Designer</p>
+        <p class="h4 text-white mb-4">Worked as a freelancer in “thefreelancers.space” for two months as web designer and I have also completed my training and courses on Udemy, Coursera, GreatLearning and Infosys.</p>
+        <a class="h5 mt-4" style="color: rgb(255, 128, 0); text-decoration: none;" href="about.html">Learn More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      var preloader=document.getElementById('load');
+      function MyFunction(){
+        preloader.style.display='none';
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="main.css">  
+   <script src="https://kit.fontawesome.com/726b0b9ea4.js" crossorigin="anonymous"></script>
+   <style>
+    .cen{
+        display: flex; 
+        justify-content: center;
+        align-items:center;
+
+    }
+    img{
+        box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.579);
+    }
+    #bac{
+        position: fixed;
+        bottom: 26px;
+        left: 18px;
+        color: rgb(255, 0, 238);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.647);
+        z-index: 999999;
+    }
+    /* #back{
+        position: fixed;
+        bottom: 26px;
+        right: 18px;
+        color: rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px black;
+        z-index: 999999;
+    } */
+   </style>
+</head>
+  <body onload="MyFunction()">
+    <div class="sec" id="load">
+        <i style="color: rgb(0, 0, 0); text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.607);" class="fa-solid fa-cog fa-spin fa-9x"></i>
+      </div>
+    <div class="bac"> <a href="index.html"><i id="bac" class="fa-solid fa-house-chimney-window fa-bounce fa-2x" aria-hidden="true"></i></a></div>
+    <!-- <div class="back"> <a href="about.html"><i id="back" class="fa-solid fa-delete-left fa-2x" aria-hidden="true"></i></a></div> -->
+    
+    <div class="cen">  
+    <div class="container mx-lg-3 mx-0 text-white">
+        <p id="active1" class="h2 d-flex justify-content-center align-items-center py-2 my-3"><span style="color: rgb(255,128,0);">C</span>ertificates</p>
+        <div class="row">
+            <div class="col-md-6 col-12 my-3">
+        <img class="img-fluid" src="images/infosys1.jpg">
+            </div>
+            <div class="col-md-6 col-12 my-3">
+        <img class="img-fluid" src="images/infosys2.jpg">
+    </div>
+    <div class="col-md-6 col-12 my-3">
+        <img class="img-fluid" src="images/bootstrap.jpg">
+    </div>
+    <div class="col-md-6 col-12 my-3">
+        <img class="img-fluid" src="images/gl1.jpg">
+    </div>
+    <div class="col-md-6 col-12 my-3">
+        <img class="img-fluid" src="images/coursera.jpg">
+    </div>
+    <div class="col-md-6 col-12 my-3">
+        <img class="img-fluid" src="images/gl2.jpg">
+    </div>
+    </div>  
+    </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        var preloader=document.getElementById('load');
+        function MyFunction(){
+          preloader.style.display='none';
+        }
+      </script>  
+</body>
+</html>
